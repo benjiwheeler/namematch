@@ -69,7 +69,6 @@ except:
     sys.exit(1)
 
 try:
-    print("Bands that appear together in lists at least %d times:" % args.numTimesThresh)
     for (alpha, omega) in pairsMeetingThresh:
         print("%s,%s" % (alpha, omega))
 except TypeError:
